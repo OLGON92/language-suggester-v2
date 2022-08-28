@@ -23,13 +23,13 @@
           </label><br>
           <label>
             <input type="radio" name="fav-dino" value="no-dino-luv">
-            I don't really like dinosaurs
+            I don't really like dinosaurs.
           </label><br>
       </div>
     </div>
     <div class="form-group">
       <div class="radio">
-        <p>Fallout New Vegas or Fallout 4</p>
+        <p>Fallout New Vegas or Fallout 4?</p>
           <label>
             <input type="radio" name="fallout-choice" value="fnv" checked>
             Fallout New Vegas FTW!
@@ -46,56 +46,61 @@
     </div>
     <div class="form-group">
       <div class="radio">
-        <p>First, let's find out what your favorite dinosaur is:</p>
+        <p>Do you prefer strength training or cardio training?</p>
           <label>
-            <input type="radio" name="fav-dino" value="t-rex" checked>
-            T-Rex
+            <input type="radio" name="phys-ed" value="strength" checked>
+            Strength for sure!
           </label><br>
           <label>
-            <input type="radio" name="fav-dino" value="raptor">
-            Raptor
+            <input type="radio" name="phys-ed" value="cardio">
+            Cardio is my main thang.
           </label><br>
           <label>
-            <input type="radio" name="fav-dino" value="no-dino-luv">
-            I don't really like dinosaurs
-          </label><br>
-      </div>
-    </div>
-    <div class="form-group">
-      <div class="radio">
-        <p>First, let's find out what your favorite dinosaur is:</p>
-          <label>
-            <input type="radio" name="fav-dino" value="t-rex" checked>
-            T-Rex
-          </label><br>
-          <label>
-            <input type="radio" name="fav-dino" value="raptor">
-            Raptor
-          </label><br>
-          <label>
-            <input type="radio" name="fav-dino" value="no-dino-luv">
-            I don't really like dinosaurs
+            <input type="radio" name="phys-ed" value="no-exercise">
+            I do not like to do physical activities.
           </label><br>
       </div>
     </div>
     <div class="form-group">
       <div class="radio">
-        <p>First, let's find out what your favorite dinosaur is:</p>
+        <p>Are you more of a Star Wars fan, Star Trek fan, or not a fan of either? </p>
           <label>
-            <input type="radio" name="fav-dino" value="t-rex" checked>
-            T-Rex
+            <input type="radio" name="star-wars-or-trek" value="star-wars" checked>
+            The force is definitely with me!
           </label><br>
           <label>
-            <input type="radio" name="fav-dino" value="raptor">
-            Raptor
+            <input type="radio" name="star-wars-or-trek" value="star-trek">
+            I would rather live long and prosper.
           </label><br>
           <label>
-            <input type="radio" name="fav-dino" value="no-dino-luv">
-            I don't really like dinosaurs
+            <input type="radio" name="star-wars-or-trek" value="not-a-star-fan">
+            I don't get the first two answers because I don't like either of those series.
           </label><br>
       </div>
     </div>
-    <button type="submit">Submit Selection</button>
+    <div class="form-group">
+      <div class="radio">
+        <p>Soccer or American Football?</p>
+          <label>
+            <input type="radio" name="footy-or-eggball" value="footy" checked>
+            Soccer, but so you know it's AkCHualLy called football in the rest of the world.
+          </label><br>
+          <label>
+            <input type="radio" name="footy-or-eggball" value="eggball">
+            American football? Don't you mean regular football? 
+          </label><br>
+          <label>
+            <input type="radio" name="footy-or-eggball" value="no-sports">
+            I don't like either or I'm not a sports fan at all.
+          </label><br>
+      </div>
+    </div>
+    <button type="submit">Show me my results please!</button>
   </form>
+  <br>
+  <button type="button" class="hidden" id="reset">Reset</button>
+  <div id="results-here" class="hidden">
+    <p>Congratulations! Your suggested language is: <span id="quiz-results"></span>!</p>
+  </div>
 </body>
 </html>
