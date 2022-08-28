@@ -1,11 +1,12 @@
 //User Interface Logic
-function langSuggester(event) {
-  event.preventDefault();
-  const userFaveDino = document.querySelector("input[name='fav-dino']:checked").value;
-  const userFalloutChoice = document.querySelector("input[name='fallout-choice']:checked").value;
-  const userExerChoice = document.querySelector("input[name='phys-ed']:checked").value;
-  const userStarWarsOrTrek = document.querySelector("input[name='wars-or-trek']:checked").value;
-  const userFootyOrEggball = document.querySelector("input[name='footy-or-eggball']:checked").value;
+$(document).ready(function() {
+  $("form#lang-suggester").submit(function(event) {
+    event.preventDefault();
+    const userFaveDino =$("input[name='fav-dino']:checked").val();
+    const userFalloutChoice =$("input[name='fallout-choice']:checked").val();
+    const userExerChoice =$("input[name='phys-ed']:checked").val();
+    const userStarWarsOrTrek =$("input[name='wars-or-trek']:checked").val();
+    const userFootyOrEggball =$("input[name='footy-or-eggball']:checked").val();
 
   let result;
   if (userFaveDino === "t-rex" && userFalloutChoice === "fnv" && userExerChoice === "strength" && userStarWarsOrTrek === "star-wars" && userFootyOrEggball === "footy") {
@@ -23,5 +24,10 @@ function langSuggester(event) {
   } else {
     result= "Swift";
   }
-  
-}
+
+  $("#result").text(result);
+    $("#results-here").show();
+
+  });
+});
+ 

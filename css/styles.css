@@ -1,0 +1,22 @@
+body {
+  background-color:blanchedalmond;
+  font-family:'Times New Roman', Times, serif;
+}
+
+#language-suggester {
+  margin-top: 50px;
+}
+
+.btn {
+  border: 4px solid black;
+  margin-left: 10px;
+}
+
+#submit-button {
+  background-color: royalblue;
+}
+
+#results-here {
+  display: none;
+  margin-top: 20px;
+}
