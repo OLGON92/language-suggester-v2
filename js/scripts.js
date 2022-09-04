@@ -8,7 +8,7 @@ function quizAnswers()  {
   const userExerChoice = document.querySelector("input[name='phys-ed']:checked").value;
   const userStarWarsOrTrek = document.querySelector("input[name='wars-or-trek']:checked").value;
   const userFootyOrEggball = document.querySelector("input[name='footy-or-eggball']:checked").value;
-    let result = "span#myLang";
+    let result;
   if (userFaveDino === "t-rex" && userFalloutChoice === "fnv" && userExerChoice === "strength" && userStarWarsOrTrek === "star-wars" && userFootyOrEggball === "footy") {
     result = "Python";
   } else if (userFaveDino === "raptor" && userFalloutChoice === "fallout-4" && userExerChoice === "cardio" && userStarWarsOrTrek === "star-trek" && userFootyOrEggball === "eggball") {
@@ -45,9 +45,6 @@ window.addEventListener("load", function() {
     submitBtn.setAttribute("click","hidden");
     resetBtn.removeAttribute("class");
   });
-
-  
-
 
 });
 
