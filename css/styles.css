@@ -11,16 +11,13 @@ body {
   display: none;
 }
 
-.btn {
+#submitBtn {
   border: 4px solid black;
   margin-left: 10px;
 }
 
-#submit-button {
-  background-color: royalblue;
+#myLang {
+  display: none;
 }
 
-#results-here {
-  display: none;
-  margin-top: 20px;
-}
+

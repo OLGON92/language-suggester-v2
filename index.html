@@ -3,8 +3,7 @@
 <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery-3.6.0.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="js/scripts.js"></script> 
   <title>The Ultimate Language Suggester</title>
 </head>
 <body>
@@ -95,12 +94,13 @@
           </label><br>
       </div>
     </div>
-    <button type="submit" class="btn" id="submit-button">Show me my results please!</button>
+    <button type="submit" hidden="hidden" id="submitBtn">Show me my results please!</button>
+    <br>
+    <input type="reset" class="hidden" id="resetBtn" value="Reset-Button" >Click button again to reset</input>
   </form>
   <br>
-  <button type="button" class="hidden" id="reset">Reset</button>
-  <div id="resultsHere" class="hidden">
-    <p>Congratulations! Your suggested language is: <span id="myLang"></span>!</p>
+  <p>Your language is:</p>
+  <div id="suggestedLang" class="hidden">
   </div>
 </body>
 </html>
